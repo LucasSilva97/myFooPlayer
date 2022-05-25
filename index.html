@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet">
+    <title>Meus Videoclipes</title>
+    <link rel="icon" type="image/x-icon" href="./assets/buttons-icons/play.png">
+</head>
+
+<body>
+    <main>
+        <!-- Cabeçalho da página -->
+        <header class="cabecalho">
+            <h1>Foo Player</h1>
+        </header>
+
+
+        <!-- Container do vídeo -->
+
+        <div id="luzNeon" class="neonOculto"></div>
+
+        <div class="videoArea">
+
+
+            <h4 id="nomeDaMusica">Foo Fighters - Best Of You</h4>
+
+            <video class="video-clipe" id="videoClipe" src="./assets/videos/foo-fighters-best-of-you-official-music-video.mp4">
+
+            </video>
+            <progress id="progresso" max="100" value="0">progress</progress>
+
+            <div class="controls">
+
+
+                <!-- Botões de controle do vídeo  -->
+
+                <button onclick="retornarTempoVideo()" class="btn" id="retornar">
+                        <img src="./assets/buttons-icons/tempo-passado.png">
+                    </button>
+                <button onclick="avancarTempoVideo()" class="btn" id="avancar">
+                            <img src="./assets/buttons-icons/avancar.png">
+                        </button>
+                <button onclick="iniciarVideo()" class="btn" id="play">
+                            <img src="./assets/buttons-icons/play.png">
+                        </button>
+                <button onclick="pausarVideo()" class="btn" id="pausa">
+                            <img src="./assets/buttons-icons/pause.png">
+                        </button>
+                <button onclick="pararVideo()" class="btn" id="stop">
+                            <img src="./assets/buttons-icons/stop.png">
+                        </button>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./script/script.js"></script>
+
+    <footer class="rodape">
+        <h4>Lucas Santana &copy;</h4>
+        <div class="contatos">
+            <a href="https://github.com/LucasSilva97" target="_blank">
+                <img class="botoesRedesContatos" src="./assets/buttons-icons/github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-santana-342a02117/" target="_blank">
+                <img class="botoesRedesContatos" src="./assets/buttons-icons/linkedin.png">
+            </a>
+            <a href="https://www.instagram.com/llucas_ssillva/" target="_blank">
+                <img class="botoesRedesContatos" src="./assets/buttons-icons/instagram.png">
+            </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
