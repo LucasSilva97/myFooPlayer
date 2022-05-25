@@ -15,7 +15,8 @@ function retornarTempoVideo() {
 //Deve disparar as sub-tarefas de neon 
 function iniciarVideo() {
     videoClipe.play();
-
+    
+/*A cada clique no botão de play, a pulsação do neon deverá aumentar*/
     setInterval(pulsarNeon, 1700);
     setInterval(pulsarTitulo, 1000);
 
